@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Watchman implements Subject {
 
-//    Class Variables
+//    Class properties.
     private ArrayList<Observer> observers;
     private int warningNum;
 
