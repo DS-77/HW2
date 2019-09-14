@@ -8,6 +8,8 @@ public class ShopOwner implements Observer{
      */
     public ShopOwner(Subject watchman) {
         this.watchman = watchman;
+//        Registers this ShopOwner Object as Observer of Subject Object noted in param.
+        watchman.registerObserver(this);
     }
 
     /**

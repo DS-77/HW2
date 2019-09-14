@@ -8,6 +8,8 @@ public class Teacher implements Observer {
      */
     public Teacher(Subject watchman) {
         this.watchman = watchman;
+//        Registers this Teacher Object as Observer of Subject Object noted in param.
+        watchman.registerObserver(this);
     }
 
     /**

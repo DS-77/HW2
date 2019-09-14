@@ -8,6 +8,8 @@ public class Knight implements Observer {
      */
     public Knight(Subject watchman) {
         this.watchman = watchman;
+//        Registers this Knight Object as Observer of Subject Object noted in param.
+        watchman.registerObserver(this);
     }
 
     /**

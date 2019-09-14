@@ -60,5 +60,7 @@ public class Watchman implements Subject {
         } else {
             return;
         }
+
+        notifyObserver();
     }
 }
