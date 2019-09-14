@@ -4,5 +4,5 @@ public interface Observer {
      * This method will be implement by the children classes.
      * @param warning is the int value to represent the waning level given.
      */
-    public void update(int warning);
+    void update(int warning);
 }
