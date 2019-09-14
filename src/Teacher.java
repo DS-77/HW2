@@ -1,12 +1,12 @@
-public class ShopOwner implements Observer{
+public class Teacher implements Observer {
 //    Class properties.
     protected Subject watchman;
 
     /**
-     * This method is the default constructor for the ShopOwner class.
+     * This method is the default constructor for the Teacher class.
      * @param watchman is the Subject Object to be observed.
      */
-    public ShopOwner(Subject watchman) {
+    public Teacher(Subject watchman) {
         this.watchman = watchman;
     }
 
@@ -16,10 +16,10 @@ public class ShopOwner implements Observer{
      */
     @Override
     public void update(int warning) {
-        if (warning == 1 ) {
-            System.out.println("Shop Owner: Close down shop and head home");
+        if (warning == 1) {
+            System.out.println("Teacher: Helps get every kid home safe");
         } else if (warning == 2) {
-            System.out.println("Shop Owner: Drops everything and find nearest hideout");
+            System.out.println("Teacher: Brings all students to the underground shelter");
         } else {
             return;
         }
