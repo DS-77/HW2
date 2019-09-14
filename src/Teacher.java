@@ -1,6 +1,6 @@
 public class Teacher implements Observer {
 //    Class properties.
-    protected Subject watchman;
+    private Subject watchman;
 
     /**
      * This method is the default constructor for the Teacher class.

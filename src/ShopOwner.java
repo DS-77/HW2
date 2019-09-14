@@ -1,6 +1,6 @@
 public class ShopOwner implements Observer{
 //    Class properties.
-    protected Subject watchman;
+    private Subject watchman;
 
     /**
      * This method is the default constructor for the ShopOwner class.
@@ -16,7 +16,7 @@ public class ShopOwner implements Observer{
      */
     @Override
     public void update(int warning) {
-        if (warning == 1 ) {
+        if (warning == 1) {
             System.out.println("Shop Owner: Close down shop and head home");
         } else if (warning == 2) {
             System.out.println("Shop Owner: Drops everything and find nearest hideout");
